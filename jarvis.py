@@ -38,7 +38,7 @@ def takeCommand():
 
     with sr.Microphone() as source:
         print("Listening....")
-        r.pause_threshold = 1  #pause threshold is if we pause in between speaking it should consider the sentence as complete
+        r.pause_threshold = 1  #pause threshold is if we pause in between speaking it shouldnt consider the sentence as complete
         audio = r.listen(source)
 
     try:
